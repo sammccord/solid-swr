@@ -1,0 +1,39 @@
+{
+  "name": "solid-swr",
+  "version": "0.0.0-canary",
+  "description": "Solid stale while revalidate (SWR) data fetching strategy",
+  "author": "Sam McCord<sam.mccord@protonmail.com>",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "exports": "dist/index.modern.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.3",
+    "microbundle": "^0.13.0"
+  },
+  "dependencies": {
+    "solid-js": "^0.23.11",
+    "swrev": "^1.7.0"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  }
+}
